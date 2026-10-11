@@ -1,6 +1,7 @@
 {
   "scripts": {
     "test": "vitest",
+    "test:dist": "pnpm build && TEST_DIST=1 vitest run",
     "typecheck": "tsc",
     "build": "tsc -p tsconfig.build.json",
     "clean": "rm -rf dist"
