@@ -1,7 +1,9 @@
 {
   "scripts": {
     "test": "vitest",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rm -rf dist"
   },
   "devDependencies": {
     "@types/node": "^26.6.4",
